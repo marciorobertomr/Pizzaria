@@ -1,12 +1,16 @@
+/* Fonte - Google Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
 .header {
     color: #FFF;
-    height: 100vh;
+    height: 85vh;
     position: relative;
     background-color: rgb(40, 40, 40);
     z-index: -2;
@@ -14,7 +18,7 @@
 
 .header__menu {
     display: flex;
-    height: 4em;
+    height: 3em;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -35,24 +39,35 @@
 }
 
 .header__image > img {
-    height: calc(100vh - 4em);
+    height: calc(85vh - 3em);
     width: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Ajusta a imagem ao container */
+    object-position: top; /* Ajusta o topo da imagem ao container */
     position: absolute;
-    filter: brightness(75%); /* Ajusta o brilho da imagem */
+    filter: brightness(85%); /* Ajusta o brilho da imagem */
     z-index: -1;
 }
 
 .header__text {
     text-align: center;
-    margin-top: calc(40vh - 4em);
+    margin-top: calc(20vh - 3em);
 }
 
-.header__text h1 {
-    font-size: 4em;
-    /* -webkit-text-stroke: 0.5px black; */ /* Cria uma borda ao redor do texto */
+.header__text p:first-child {
+    font-size: 3em;
 }
 
-.header__text p {
-    font-size: 1.7em;
+.header__text p:nth-child(2n) {
+    font-size: 1em;
+    margin: 1em auto 2em;
+}
+
+.header__text button {
+    padding: 1em 1.5em;
+    
+    font-size: 0.7em;
+    border-radius: 1em;
+    font-weight: bold;
+    
+    background-color: #f1a90d;
 }
