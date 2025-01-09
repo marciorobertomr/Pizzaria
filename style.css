@@ -123,10 +123,12 @@
     font-weight: bold;
 }
 
+/* SOBRE NÓS */
+
 .about-us {
     padding: 3em;
 
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(./img/imagem1.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(./img/imagem1.jpg);
     background-size: cover;
     background-position: center;
 
@@ -138,6 +140,8 @@
     margin-top: 1.5rem;
     font-size: 0.8rem;
 }
+
+/* CONTATO */
 
 .contact {
     padding: 3em;
@@ -154,13 +158,42 @@
 
     text-align: left;
     justify-content: space-between;
-    /* gap: 1rem; */
+    gap: 1rem;
 
     width: 80%;
     font-size: 0.8rem;
     margin: 1em auto;
+    font-style: italic;
+}
+
+#email {
+    color: #f1a90d;
 }
 
 .contact__data p {
-    width: 40%;
+    /* width: 35%; */
+    width: 300px;
+}
+
+.contact button {
+    margin-top: 3em;
+    padding: 0.5rem .75rem;
+    
+    font-size: 0.7rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: bold;
+    
+    background-color: #f1a90d;
+    cursor: pointer;
+}
+
+/* RODAPÉ */
+
+footer p {
+    line-height: 5rem;
+    background-color: rgb(40, 40, 40);
+    color: #f1a90d;
+    text-align: center;
+    font-size: 0.8rem;
 }
